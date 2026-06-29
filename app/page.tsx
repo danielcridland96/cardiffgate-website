@@ -37,14 +37,9 @@ const featuredSpaces = [
     description: 'Contemporary office accommodation in a landscaped court setting.',
   },
   {
-    name: 'Lime Tree Court',
-    type: 'Office Campus',
-    description: 'Spacious modern offices with excellent natural light and parking.',
-  },
-  {
-    name: 'Laburnum House',
-    type: 'Standalone Building',
-    description: 'Self-contained headquarters opportunity with prominent frontage.',
+    name: 'Copse Walk',
+    type: 'Office Accommodation',
+    description: 'Modern office accommodation set in a pleasant landscaped setting.',
   },
   {
     name: 'Design & Build',
