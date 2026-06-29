@@ -12,7 +12,7 @@ npm run start    # Run production build locally
 
 ## Deploy
 
-Hosted on Vercel. Push to `main` triggers auto-deploy.
+Hosted on Vercel. Auto-deploys on every push to `master` via GitHub integration.
 Manual deploy: `vercel --prod` from project root.
 
 ## Project Structure
@@ -38,6 +38,11 @@ public/
   jll-logo.png          # JLL leasing agent logo
   location-*.png        # Location diagrams from old site (not currently used)
 ```
+
+## Available Spaces
+
+Currently listed: **Ashtree Court**, **Copse Walk**, **Design & Build**.
+Removed: Laburnum House, Lime Tree Court, Retail Pod Development.
 
 ## Key Details
 
