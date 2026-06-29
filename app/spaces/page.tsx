@@ -24,30 +24,6 @@ const spaces = [
     features: ['Natural landscaping', 'On-site parking', 'Energy efficient', 'Fibre connectivity'],
   },
   {
-    name: 'Laburnum House',
-    type: 'Standalone Building',
-    status: 'Available',
-    description:
-      'A self-contained headquarters opportunity offering prominent frontage and brand visibility within the park. Suited to a single occupier requiring a dedicated presence.',
-    features: ['Prominent frontage', 'Self-contained', 'Large parking allocation', 'Bespoke fit-out potential'],
-  },
-  {
-    name: 'Lime Tree Court',
-    type: 'Office Campus',
-    status: 'Available',
-    description:
-      'Spacious modern offices arranged around a landscaped court. Lime Tree Court provides excellent natural light, generous floor plates and strong staff amenity.',
-    features: ['Generous floor plates', 'Excellent natural light', 'Landscaped surroundings', 'Ample parking'],
-  },
-  {
-    name: 'Retail Pod Development',
-    type: 'Retail / Leisure',
-    status: 'Opportunity',
-    description:
-      "A planning-consented retail pod development offering an exciting opportunity to serve the park's growing business and residential catchment.",
-    features: ['Planning consent in place', 'High footfall location', 'Flexible unit sizes', 'Adjacent to motorway services'],
-  },
-  {
     name: 'Design & Build',
     type: 'Bespoke',
     status: 'On Request',
