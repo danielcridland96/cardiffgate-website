@@ -34,16 +34,19 @@ const featuredSpaces = [
   {
     name: 'Ashtree Court',
     type: 'Office Suite',
+    image: '/ashtree-court.jpg',
     description: 'Contemporary office accommodation in a landscaped court setting.',
   },
   {
     name: 'Copse Walk',
     type: 'Office Accommodation',
+    image: '/copse-walk.jpg',
     description: 'Modern office accommodation set in a pleasant landscaped setting.',
   },
   {
     name: 'Design & Build',
     type: 'Bespoke',
+    image: '/park-main.jpg',
     description: 'Tailor-made build-to-suit solutions for larger occupiers.',
   },
 ]
@@ -134,8 +137,11 @@ export default function Home() {
                 key={space.name}
                 className="bg-white rounded-xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow group"
               >
-                <div className="h-36 bg-gradient-to-br from-navy-700 to-navy-900 flex items-end p-4">
-                  <span className="text-xs font-semibold text-gold-400 uppercase tracking-wider">{space.type}</span>
+                <div className="h-36 relative overflow-hidden">
+                  <img src={space.image} alt={space.name} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-navy-900/50 flex items-end p-4">
+                    <span className="text-xs font-semibold text-gold-400 uppercase tracking-wider">{space.type}</span>
+                  </div>
                 </div>
                 <div className="p-5">
                   <h3 className="font-bold text-navy-800 text-lg mb-2">{space.name}</h3>
