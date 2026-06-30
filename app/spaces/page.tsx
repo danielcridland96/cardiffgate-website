@@ -11,6 +11,7 @@ const spaces = [
     name: 'Ashtree Court',
     type: 'Office Suites',
     status: 'Available',
+    image: '/ashtree-court.jpg',
     description:
       'Contemporary, flexible office suites set within a well-maintained courtyard environment. Ideal for companies seeking modern, professional accommodation with excellent shared facilities.',
     features: ['Flexible floor plates', 'Car parking included', 'Shared reception', 'Meeting rooms available'],
@@ -19,6 +20,7 @@ const spaces = [
     name: 'Copse Walk',
     type: 'Office Accommodation',
     status: 'Available',
+    image: '/copse-walk.jpg',
     description:
       'A range of modern office accommodation set in a pleasant landscaped setting. Copse Walk offers high quality space suitable for a variety of occupiers.',
     features: ['Natural landscaping', 'On-site parking', 'Energy efficient', 'Fibre connectivity'],
@@ -27,6 +29,7 @@ const spaces = [
     name: 'Design & Build',
     type: 'Bespoke',
     status: 'On Request',
+    image: '/park-main.jpg',
     description:
       'For larger occupiers, Cardiff Gate offers design and build opportunities allowing you to create a purpose-built, bespoke facility tailored to your exact requirements.',
     features: ['Bespoke specification', 'Freehold or leasehold', 'Scalable footprint', 'Landmark campus potential'],
@@ -59,7 +62,7 @@ export default function SpacesPage() {
             {spaces.map((space) => (
               <div key={space.name} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div className="h-40 relative overflow-hidden">
-                  <img src="/park-hero.png" alt={space.name} className="w-full h-full object-cover" />
+                  <img src={space.image} alt={space.name} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-navy-900/50 flex items-end p-5">
                     <span className="text-xs font-semibold text-gold-400 uppercase tracking-wider">{space.type}</span>
                   </div>
