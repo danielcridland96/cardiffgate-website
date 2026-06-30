@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -63,7 +64,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative bg-navy-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/park-main.jpg')" }} />
+        <Image src="/park-main.jpg" alt="" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-navy-900/65" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-36">
           <div className="max-w-3xl">
@@ -145,7 +146,7 @@ export default function Home() {
                 className="bg-white rounded-xl overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow group"
               >
                 <div className="h-36 relative overflow-hidden">
-                  <img src={space.image} alt={space.name} className="w-full h-full object-cover" />
+                  <Image src={space.image} alt={space.name} fill className="object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
                   <div className="absolute inset-0 bg-navy-900/50 flex items-end p-4">
                     <span className="text-xs font-semibold text-gold-400 uppercase tracking-wider">{space.type}</span>
                   </div>

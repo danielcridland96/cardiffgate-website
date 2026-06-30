@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
@@ -21,10 +22,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center">
-            <img
+            <Image
               src="/park-hero.png"
               alt="Cardiff Gate International Business Park"
+              width={325}
+              height={202}
               className="h-10 w-auto object-contain"
+              priority
             />
           </Link>
 

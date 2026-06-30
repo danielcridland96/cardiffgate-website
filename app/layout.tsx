@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://cardiffgate.com'),
   title: {
     default: 'Cardiff Gate International Business Park',
     template: '%s | Cardiff Gate',

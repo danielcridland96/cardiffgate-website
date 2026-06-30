@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 
 const agents = [
@@ -155,7 +156,7 @@ export default function ContactPage() {
               <div>
                 <div className="flex items-center gap-3 mb-5">
                 <h2 className="text-xl font-bold text-navy-800">Leasing Agents</h2>
-                <img src="/jll-logo.png" alt="JLL" className="h-6 w-auto object-contain" />
+                <Image src="/jll-logo.png" alt="JLL" width={1173} height={541} className="h-6 w-auto object-contain" />
               </div>
                 <div className="space-y-5">
                   {agents.map((a) => (

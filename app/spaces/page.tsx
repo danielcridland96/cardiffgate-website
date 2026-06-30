@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -62,7 +63,7 @@ export default function SpacesPage() {
             {spaces.map((space) => (
               <div key={space.name} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div className="h-40 relative overflow-hidden">
-                  <img src={space.image} alt={space.name} className="w-full h-full object-cover" />
+                  <Image src={space.image} alt={space.name} fill className="object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
                   <div className="absolute inset-0 bg-navy-900/50 flex items-end p-5">
                     <span className="text-xs font-semibold text-gold-400 uppercase tracking-wider">{space.type}</span>
                   </div>

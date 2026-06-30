@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="mb-4">
-              <img src="/park-hero.png" alt="Cardiff Gate International Business Park" className="h-10 w-auto object-contain" />
+              <Image src="/park-hero.png" alt="Cardiff Gate International Business Park" width={325} height={202} className="h-10 w-auto object-contain" />
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               Cardiff&apos;s premier business destination. High quality office space at M4 Junction 30,
