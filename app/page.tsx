@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Cardiff Gate International Business Park',
+  description:
+    'Cardiff Gate International Business Park offers premium office space at M4 Junction 30, Cardiff. Flexible suites, design & build opportunities, and 80+ occupying businesses.',
+}
 
 const stats = [
   { value: 'M4 J30', label: 'Motorway Access' },

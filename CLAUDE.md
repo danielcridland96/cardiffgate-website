@@ -1,6 +1,6 @@
 # Cardiff Gate Website
 
-Next.js 14 (App Router) + Tailwind CSS marketing site for Cardiff Gate International Business Park.
+Next.js 15 (App Router) + Tailwind CSS marketing site for Cardiff Gate International Business Park.
 
 ## Commands
 
@@ -20,23 +20,29 @@ Manual deploy: `vercel --prod` from project root.
 ```
 app/
   page.tsx              # Home page
+  not-found.tsx         # Branded 404 page
+  sitemap.ts            # Auto-generated sitemap at /sitemap.xml
   spaces/page.tsx       # Available spaces
   occupiers/page.tsx    # Occupier directory
   amenities/page.tsx    # On-site facilities
   location/
     page.tsx            # Server wrapper (metadata)
     LocationClient.tsx  # Interactive map + transport tabs (client component)
-  contact/page.tsx      # Enquiry form + JLL agent details
+  contact/
+    layout.tsx          # Metadata wrapper (page.tsx is 'use client')
+    page.tsx            # Enquiry form + JLL agent details
 components/
   Header.tsx            # Sticky nav (client component)
   Footer.tsx            # Footer with links and contact
-  LogoImage.tsx         # Clearbit logo fetcher + OccupierLogo card (client components)
+  LogoImage.tsx         # OccupierLogo card with Clearbit logo + initials fallback
 public/
-  park-hero.png         # Cardiff Gate wordmark (used in header/footer)
-  park-main.jpg         # Hero background photo (CARDIFF_062.JPG from old site)
+  park-hero.png         # Cardiff Gate wordmark (header, footer, favicon)
+  park-main.jpg         # Hero background photo + OG image
   park-photo2.png       # Secondary park photo
+  ashtree-court.jpg     # Ashtree Court space photo
+  copse-walk.jpg        # Copse Walk space photo
   jll-logo.png          # JLL leasing agent logo
-  location-*.png        # Location diagrams from old site (not currently used)
+  robots.txt            # Search engine crawl rules
 ```
 
 ## Available Spaces

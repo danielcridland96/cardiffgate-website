@@ -1,10 +1,6 @@
 'use client'
 
-import type { Metadata } from 'next'
 import { useState } from 'react'
-
-// Note: metadata export doesn't work in 'use client' components.
-// Move metadata to a wrapper layout if needed; kept here for reference.
 
 const agents = [
   {
@@ -125,9 +121,6 @@ export default function ContactPage() {
                         <option value="">Select an option</option>
                         <option>Ashtree Court</option>
                         <option>Copse Walk</option>
-                        <option>Laburnum House</option>
-                        <option>Lime Tree Court</option>
-                        <option>Retail Pod Development</option>
                         <option>Design &amp; Build Opportunity</option>
                         <option>General enquiry</option>
                       </select>
