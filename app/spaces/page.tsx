@@ -25,6 +25,7 @@ const spaces = [
     description:
       'A range of modern office accommodation set in a pleasant landscaped setting. Copse Walk offers high quality space suitable for a variety of occupiers.',
     features: ['Natural landscaping', 'On-site parking', 'Energy efficient', 'Fibre connectivity'],
+    brochure: '/copse-walk-brochure.pdf',
   },
   {
     name: 'Design & Build',
@@ -88,6 +89,16 @@ export default function SpacesPage() {
                       </li>
                     ))}
                   </ul>
+                  {space.brochure && (
+                    <a
+                      href={space.brochure}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-auto mb-3 block text-center border border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white font-semibold py-2.5 rounded transition-colors text-sm"
+                    >
+                      Download brochure (PDF)
+                    </a>
+                  )}
                   <Link
                     href="/contact"
                     className="mt-auto block text-center bg-navy-800 hover:bg-navy-700 text-white font-semibold py-2.5 rounded transition-colors text-sm"
