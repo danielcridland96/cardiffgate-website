@@ -20,7 +20,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               {[
-                ['Spaces Available', '/spaces'],
+                ['Available Spaces', '/spaces'],
                 ['Occupiers', '/occupiers'],
                 ['Amenities', '/amenities'],
                 ['Location & Transport', '/location'],

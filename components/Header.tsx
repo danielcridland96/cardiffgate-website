@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 const nav = [
-  { label: 'Spaces Available', href: '/spaces' },
+  { label: 'Available Spaces', href: '/spaces' },
   { label: 'Occupiers', href: '/occupiers' },
   { label: 'Amenities', href: '/amenities' },
   { label: 'Location', href: '/location' },

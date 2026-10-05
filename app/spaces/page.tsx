@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Spaces Available',
+  title: 'Available Spaces',
   description: 'Available office spaces and commercial units at Cardiff Gate International Business Park.',
 }
 
@@ -49,7 +49,7 @@ export default function SpacesPage() {
       <section className="bg-navy-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-xs font-bold uppercase tracking-widest text-gold-400 mb-3">What&apos;s available</div>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Spaces Available</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Available Spaces</h1>
           <p className="text-gray-300 text-lg max-w-2xl">
             From flexible suites to standalone headquarters and bespoke build-to-suit opportunities — Cardiff Gate has space
             to suit every ambition.
