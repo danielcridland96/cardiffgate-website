@@ -15,7 +15,7 @@ const spaces = [
     image: '/ashtree-court.jpg',
     description:
       'Car parking Spaces available on flexible leasing terms',
-    features: ['Flexible floor plates', 'Car parking included', 'Shared reception', 'Meeting rooms available'],
+    features: [],
   },
   {
     name: 'Copse Walk',
