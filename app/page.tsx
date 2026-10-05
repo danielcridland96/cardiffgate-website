@@ -43,7 +43,7 @@ const featuredSpaces = [
     name: 'Ashtree Court',
     type: 'Office Suite',
     image: '/ashtree-court.jpg',
-    description: 'Contemporary office accommodation in a landscaped court setting.',
+    description: 'Car parking Spaces available on flexible leasing terms',
   },
   {
     name: 'Copse Walk',
