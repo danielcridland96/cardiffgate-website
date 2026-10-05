@@ -14,7 +14,7 @@ const spaces = [
     status: 'Available',
     image: '/ashtree-court.jpg',
     description:
-      'Contemporary, flexible office suites set within a well-maintained courtyard environment. Ideal for companies seeking modern, professional accommodation with excellent shared facilities.',
+      'Car parking Spaces available on flexible leasing terms',
     features: ['Flexible floor plates', 'Car parking included', 'Shared reception', 'Meeting rooms available'],
   },
   {
